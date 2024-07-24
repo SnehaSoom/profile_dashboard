@@ -1,3 +1,4 @@
+// src/Home.js
 import React, { useState } from "react";
 import "./Home.css";
 import Theresa_Webb from "../assets/images/Theresa_Webb.svg";
@@ -11,6 +12,10 @@ const Home = () => {
 
   const handlePostClick = () => {
     setIsOpen(true);
+  };
+
+  const handleCloseClick = () => {
+    setIsOpen(false);
   };
 
   return (
@@ -48,7 +53,12 @@ const Home = () => {
 
       {isOpen && (
         <div className="modal">
-          <Register />
+          <div className="modal-content">
+            <button className="close-button" onClick={handleCloseClick}>
+              &times;
+            </button>
+            <Register />
+          </div>
         </div>
       )}
 
