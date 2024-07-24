@@ -1,0 +1,138 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  padding: 20px;
+}
+
+.register-container {
+  padding: 25px;
+  text-align: center;
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #27292d, #27292d),
+    linear-gradient(129.59deg, #969696 0%, #343434 98.18%);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+
+.register-container p {
+  color: #6b6c70;
+}
+
+.register-container h4 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  color: #c5c7ca;
+  font-size: 14px;
+}
+
+.input-group input {
+  display: inline;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #525252;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #27292d;
+  color: white;
+}
+
+#register {
+  text-align: left;
+}
+
+button {
+  background-color: #4a96ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.show-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .register-container {
+    width: 70%; /* Adjusted width for larger tablets and desktops */
+  }
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    width: 60%;
+    padding: 20px;
+  }
+
+  .register-container h4 {
+    font-size: 16px;
+  }
+
+  .input-group input {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .register-container h4 {
+    font-size: 14px;
+  }
+
+  .input-group input {
+    padding: 6px;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
