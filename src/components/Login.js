@@ -86,7 +86,7 @@ function Login() {
 
           {loginError && <p className="error">{loginError}</p>}
 
-          <button type="submit">Login now</button>
+          <button className='continue-btn' type="submit">Login now</button>
           <p id="register">
             Not registered yet? <Link to="/register">Register &rarr;</Link>
           </p>

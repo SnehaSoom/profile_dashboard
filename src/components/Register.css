@@ -5,7 +5,18 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  /* background-color: black; */
+  padding: 20px;
+}
+
+.register-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: black; */
   padding: 20px;
 }
 
@@ -21,6 +32,16 @@
     linear-gradient(129.59deg, #969696 0%, #343434 98.18%);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
+  position: relative;
+}
+
+.close-div {
+  /* border: 1px solid white; */
+  width: fit-content;
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  cursor: pointer;
 }
 
 .register-container p {
@@ -75,9 +96,11 @@ button:hover {
 .input-group input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #86838355;
+  border-radius: 5px;
   box-sizing: border-box;
+  margin-top: 8px;
+  height: 45px;
 }
 
 .show-password {
@@ -88,12 +111,24 @@ button:hover {
   cursor: pointer;
 }
 
+.continue-btn {
+  background-color: #1d9bf0;
+  border: none;
+  padding: 10px 40px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: 100%;
+}
+
 
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
   .register-container {
-    width: 70%; /* Adjusted width for larger tablets and desktops */
+    width: 70%;
+    /* Adjusted width for larger tablets and desktops */
   }
 }
 

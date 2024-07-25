@@ -47,7 +47,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   color: #C5C7CA;
   font-size: 14px;
 }
@@ -61,11 +61,12 @@
   display: inline;
   width: 100%;
   padding: 10px;
-  border: 2px solid #525252;
+  border: 1px solid #52525242;
   border-radius: 4px;
   box-sizing: border-box;
   background-color: #27292d;
   color: white;
+  height: 45px;
 }
 
 .password-toggle {
@@ -75,7 +76,7 @@
   margin-top: 5px;
   position: absolute;
   right: 10px;
-  top: 1px;
+  top: -5px;
 }
 
 #register{

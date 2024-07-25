@@ -57,7 +57,7 @@ const Home = () => {
             <button className="close-button" onClick={handleCloseClick}>
               &times;
             </button>
-            <Register />
+            <Register isModal={true} handleClose={()=> setIsOpen(false)}/>
           </div>
         </div>
       )}
